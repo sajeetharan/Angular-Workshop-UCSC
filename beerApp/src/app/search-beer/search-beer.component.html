@@ -1,0 +1,28 @@
+    <div class="nav-wrapper">
+        <form>
+            <div class="input-field">
+                <input id="search" type="search" [formControl]="termInput" required />
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+            </div>
+        </form>
+    </div>
+    <div>
+        <ul>
+            <li *ngFor="let beer of beers">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="{{ beer.image }}">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p>{{ beer.description }}</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">{{ beer.name }}</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+          </ul>
+    </div>

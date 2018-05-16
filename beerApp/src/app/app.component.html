@@ -1,0 +1,14 @@
+<nav>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">UCSC Session</a>
+        <ul id="nav-mobile" class="right">
+            <li><a [routerLink]="['/home']">Home</a></li>
+            <li><a [routerLink]="['/search']">Search Beers</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
